@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Explore Redistricting</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    /*    Figure out how to right-align map for next time*/
+    #map {
+        position: fixed;
+        width: 70%;
+        right:0;
+    }
+    #features {
+        width: 30%;
+        margin-right: 30%;
+        font-family: "Times New Roman", serif;
+        overflow-y: scroll;
+        background-color: #E34234;
+    }
+    section {
+        padding: 25px 50px;
+        line-height: 25px;
+        border-bottom: 1px solid #ddd;
+        opacity: 0.25;
+        font-size: 20px;
+    }
+    section.active {
+        opacity: 1;
+    }
+    section:last-child {
+        border-bottom: none;
+        margin-bottom: 200px;
+    }
+</style>
+
+<div id="map"></div>
+<div id="features">
+    <section id="ContinentalUS" class="active">
+        <h3>What is redistricting?</h3>
+        <p>
+            In the United States, we largely elect our representatives via districts. This is a crucial part of the political process, and these elections are one way to instantiate political change. As a result, it’s very important to consider the mechanisms we use to draw districts carefully. There are fairly few requirements in the drawing of these electoral districts. States simply must make their districts equal in population to each other and must follow the Voting Rights Act, which bans disenfranchising residents based on race or ethnicity (Redistricting Criteria, n.d.). As a result, each state has its own process. In this story, we’ll explore how states make decisions about the districts they draw – and consider how this can lead to complicated problems.
+
+        </p>
+    </section>
+    <section id="texas">
+        <h3>Gerrymandering</h3>
+        <p>
+            Most states have their districts drawn by the state legislature, with no guardrails preventing abuse of the process (Eckman, 2021). This results in what is called gerrymandering. This is when maps are drawn to result in an outcome which favors one group over another. For example, Texas is a state with very few rules on gerrymandering. The result is that Texas has maps which are highly gerrymandered; in the specific case of Texas this means districts which favor Republicans. You can see on the map that districts shake and slide all across the map, linking Democratic towns like Killeen or Denton (in the suburbs of Dallas) to Republican West Texas (Park et al., 2021). Gerrymandering like this happens all over the country, and both parties will do it.
+        </p>
+    </section>
+    <section id="washington">
+        <h3>Redistricting Commissions</h3>
+        <p>
+            Some states, however, have a different process for mapping districts, ones which are designed to be less biased. One prominent alternative is redistricting commissions. The districts under a commission are drawn by a nonpartisan or bipartisan body which is supposed to be fair and unbiased. In Washington State, for example, districts are drawn by a body consisting of equal numbers of Democrats and Republicans, brought together by a nonpartisan and nonvoting mediator. This commission holds hearings all throughout the state and on Zoom, and decides on how to best draw a map which represents Washingtonians (Commissioners, n.d.; FAQ, n.d.). Several other states, including California, Arizona, and Michigan, have similar processes.
+    </section>
+    <section id="yakimafeatures">
+        <h3>What criteria do commissions use?</h3>
+        <p>
+            Redistricting commissions don’t just draw their lines will-nilly. They draw them using explicit criteria. First and foremost, they must make their districts equal in population and they must comply with the Voting Rights Act. But they also often follow other criteria too. These can include respecting the boundaries of counties and cities (and keeping those units together), keeping Native American reservations and off-reservation trust land together, aligning district lines with natural barrier like mountains or roads, and respecting local communities.The criteria for each redistricting commission is different in each case, so the rules will vary from state to state (Eckman, 2021).
+        </p><p>
+            You can see on the right an interactive checklist showing different redistricting criteria. You can turn these on and off to see how you might choose to prioritize different criteria, using the area around Yakima as an example.
+        </p>
+    </section>
+    <section id="yakimastories">
+        <h3>What are some possible problems?</h3>
+        <p>
+            I didn’t just pick Yakima randomly. There was a major struggle over redistricting for the Washington State legislature after the last census there. You can see the map they drew on the right. On that map, you can see the districts split up the Latino community between Yakima and the Tri-Cities. This process was highly contentious, with Republicans on the commission advocating for what ended up becoming the final map and Democrats opposing it (Thompson, 2024).
+        </p> <p>
+            Because of this split of the Latino community, a federal judge ruled that the map violated the Voting Rights Act by spreading Latino voters too thin and allowing them to be outvoted (Soto Palmer v. Hobbs, 2023). 
+        </p> <p>
+            Why did the redistricting commission make this error? Click the popups on the map to find out.
+        </p>
+    </section>
+    <section id="montana">
+        <h3>One positive example</h3>
+        <p>
+            Redistricting commissions are great! But we can see from the issues that Washington State experienced that they also need strong guidance and rules to make sure they do their job well. 
+        </p> <p>
+            Here, it’s good to look at a positive example. Montana uses a redistricting commission too, but they have a stronger structure in place, with a nonpartisan tiebreaker. This is the state’s congressional map (Jackson, n.d.). You can use the interactive checklist on the right to see how it matches up with these criteria. You can see that it fits much better.        
+        </p>
+    </section>
+    <section id="citations">
+        <h3>Citations</h3>
+        <p>
+            Commissioners. (n.d.). Retrieved March 12, 2024, from https://www.redistricting.wa.gov/commissioners
+        </p><p>
+            Eckman, S. J. (2021). Redistricting commissions for congressional districts. In Redistricting commissions for congressional districts ([Library of Congress public edition].). Congressional Research Service. https://crsreports.congress.gov/product/details?prodcode=IN11053
+        </p><p>
+            FAQ. (n.d.). Washington State Redistricting Commission. Retrieved March 10, 2024, from https://www.redistricting.wa.gov/faq
+        </p><p>
+            Jackson, S. (n.d.). MDAC – Developing Legislative Districts for Montana. MDAC. Retrieved June 3, 2024, from https://mtredistricting.gov/
+        </p><p>
+            Park, A., Smart, C., Taylor, R., & Watkins, M. (2021). An Extremely Detailed Map of the 2020 Election [Map]. The New York Times. https://www.nytimes.com/interactive/2021/upshot/2020-election-map.html
+        </p><p>
+            Redistricting Criteria. (n.d.). Retrieved June 3, 2024, from https://www.ncsl.org/redistricting-and-census/redistricting-criteria
+        </p><p>
+            Soto Palmer v. Hobbs, 3:22-cv-05035-RSL (United States District Court for the Western District of Washington August 10, 2023). https://1.next.westlaw.com/Document/Icc5675b037e911eebdbff3176d2d1ebb/View/FullText.html?originationContext=kcCitingReferences&transitionType=Document&contextData=(sc.Search)&docSource=8c580ec30f904b2f84b603acfb255dc3&rank=2&rulebookMode=false&ppcid=554431acc0b54f41a881ea357a0d4fbd
+        </p><p>
+            Thompson, M. (2024, January 23). The Failed Promise of Independent Election Mapmaking. ProPublica. https://www.propublica.org/article/the-failed-promise-of-independent-election-mapmaking
+        </p>
+    </section>
+</div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpemFiZXRoY2Zpc2NoZXIiLCJhIjoiY2x1bjNrb2llMWo2eTJpbWpmazdiNnF5eiJ9.H10J5pTTFMnJs4uftavIbg';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/elizabethcfischer/clwtkob1p012k01pp6jbp73zq',
+        center: [-96.720426, 38.672645],
+        zoom: 4.1,
+        
+    });
+
+    const chapters = {
+        'ContinentalUS': {
+            center: [-96.720426, 38.672645],
+            zoom: 4.1,
+        },
+        'texas': {
+            center: [-99.108175, 31.452096],
+            zoom: 5.75,
+        },
+        'washington': {
+            center: [-120.537526, 47.312759],
+            zoom: 6.75,
+        },
+        'yakimafeatures': {
+            center: [-119.815254, 46.328913],
+            zoom: 8
+        },
+        'yakimastories': {
+            center: [-119.815254, 46.328913],
+            zoom: 8,
+            layerOn: "NativeHomeLands, Counties"
+        },
+        'montana': {
+            center: [-110.703149, 47.055154],
+            zoom: 6
+        },
+        'citations': {
+            center: [-110.703149, 47.055154],
+            zoom: 6,
+        }
+    };
+
+    let activeChapterName = 'ContinentalUS';
+    function setActiveChapter(chapterName) {
+        if (chapterName === activeChapterName) return;
+        
+        map.jumpTo( {
+            center: chapters[chapterName].center,
+            zoom:  chapters[chapterName].zoom,
+        });
+        
+        document.getElementById(chapterName).classList.add('active');
+        document.getElementById(activeChapterName).classList.remove('active');
+
+        activeChapterName = chapterName;
+    }
+
+    function isElementOnScreen(id) {
+        const element = document.getElementById(id);
+        const bounds = element.getBoundingClientRect();
+        return bounds.top < window.innerHeight && bounds.bottom > 0;
+    }
+
+    // On every scroll event, check which element is on screen
+    window.onscroll = () => {
+        for (const chapterName in chapters) {
+            if (isElementOnScreen(chapterName)) {
+                setActiveChapter(chapterName);
+                break;
+            }
+        }
+    };
+        // Disable drag and zoom handlers.
+        map.dragPan.disable();
+        map.scrollZoom.disable();
+        map.boxZoom.disable();
+        map.dragRotate.disable();
+        map.keyboard.disable();
+        map.doubleClickZoom.disable();
+        map.touchZoomRotate.disable();
+        map.touchZoomRotate.disableRotation();
+    
+    // Change the map pointers
+	map.getCanvas().style.cursor = 'auto';
+</script>
+
+</body>
+</html>
