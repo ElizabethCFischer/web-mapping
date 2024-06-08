@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <title>Let's Explore Redistricting</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+      
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body { margin:50px; padding:0; }
+        #map1 { position:relative; height:900px; width:90%;}
+        #map2 { position:relative; height:800px; width:90%;}
+        #map3 { position:relative; height:800px; width:90%;}
+        #map4 { position:relative; height:800px; width:90%;}
+        #map5 { position:relative; height:800px; width:90%;}
+        #map6 { position:relative; height:800px; width:90%;}
+        #map7 { position:relative; height:800px; width:90%;}
+        #map8 { position:relative; height:800px; width:90%;}
+        p {
+            font-family: "Georgia", serif;
+            font-size: 20px
+        }
+    </style>
+  </head>
+
+  <body>
+<!--Textual content goes here-->
+      <h1>Let's Explore Redistricting</h1>
+      <p> In the United States, we largely elect our representatives via districts. This is a crucial part of the political process, and these elections are one way to instantiate political change. As a result, it’s very important to consider the mechanisms we use to draw districts carefully. There are fairly few requirements in the drawing of these electoral districts. States simply must make their districts equal in population to each other and must follow the Voting Rights Act, which bans disenfranchising residents based on race or ethnicity (Redistricting Criteria). As a result, each state has its own process. In this story, we’ll explore how states make decisions about the districts they draw – and consider how this can lead to complicated problems.</p>
+      <br>
+        <div id='map1'></div>
+      <hr>
+      <h2>The Problem of Gerrymandering</h2>
+        <p>Most states have their districts drawn by the state legislature, with no guardrails preventing abuse of the process (Eckman, 2021). This results in what is called gerrymandering. This is when maps are drawn to result in an outcome which favors one group over another. For example, Texas is a state with very few rules on gerrymandering. The result is that Texas has maps which are highly gerrymandered; in the specific case of Texas this means districts which favor Republicans. You can see on the map that districts shake and slide all across the map, linking Democratic towns like Killeen or Denton (in the suburbs of Dallas) to Republican West Texas (Park et al.). Gerrymandering like this happens all over the country, and both parties do it.</p>
+      <br>
+      <div id='map2'></div>
+      <hr>
+      <h2>Redistricting Commissions</h2>
+        <p>Some states, however, have a different process for mapping districts, ones which are designed to be less biased. One prominent alternative is redistricting commissions. The districts under a commission are drawn by a nonpartisan or bipartisan body which is supposed to be fair and unbiased. In Washington State, for example, districts are drawn by a body consisting of equal numbers of Democrats and Republicans, brought together by a nonpartisan and nonvoting mediator. This commission holds hearings all throughout the state and on Zoom, and decides on how to best draw a map which represents Washingtonians (Commissioners; "FAQ", n.d.). Several other states, including California, Arizona, and Michigan, have similar processes.</p>
+        <p>You can see the state legislative map drawn in Washington after the 2020 census below.</p>
+      <br>
+      <div id='map3'></div>
+      <hr>
+      <h2>Commission Criteria</h2>
+      <p>Redistricting commissions don’t just draw their lines will-nilly. They draw them using explicit criteria. First and foremost, they must make their districts equal in population and they must comply with the Voting Rights Act. But they also often follow other criteria too. These can include respecting the boundaries of counties and cities (and keeping those units together), keeping Native American reservations and off-reservation trust land together, aligning district lines with natural barrier like mountains or roads, and respecting local communities. The criteria for each redistricting commission is different in each case, so the rules will vary from state to state (Eckman).
+      <br><br>
+      You can see below two different maps; both are zoomable. One is displaying streets and rivers:
+      </p>
+      <div id='map4'></div>
+      <br> <p>And the other local boundaries. Native lands are in purple; counties are white with black outlines, and municipalities are in red.</p>
+      <div id='map5'></div>
+      <hr>
+      <h2>Mistakes</h2>
+      <p>I didn’t just pick Yakima randomly. There was a major struggle over redistricting for the Washington State legislature after the last census there. You can see the map they drew below. This process was highly contentious, with Republicans on the commission advocating for what ended up becoming the final map and Democrats opposing it. Because both parties had to agree, the Republican map ended up passing (Thompson).
+      <br><br>
+      Because of this split of the Latino community, a federal judge ruled that the map violated the Voting Rights Act by spreading Latino voters too thin and allowing them to be outvoted (Lasnik). 
+      <br><br>
+      The commission paired heavily white western Yakima with the Yakama Indian Reservation, which includes within it the predominantly Latino towns of Toppenish and Wapato. As a result, those largely Latino communities were outvoted by residents of west Yakima. Meanwhile, largely Latino eastern Yakima was paired with largely Latino Sunnyside, Othello and eastern Pasco for a majority Latino district, but without Toppenish and Wapato it was not Latino enough to reliably elect the preferred candidate of the community, which is required under the Voting Rights Act (Lasnik).
+      </p>
+      <div id='map6'></div>
+      <hr>
+      <h2>The tl;dr</h2>
+      <p>Redistricting commissions are great! But we can see from the issues that Washington State experienced that they also need strong guidance and rules to make sure they do their job well. 
+      <br><br>
+      Here, it’s good to look at a positive example. Montana uses a redistricting commission too, but they have a stronger structure in place, with a nonpartisan tiebreaker (Jackson). Here are the counties, cities, native lands, and the topography of Montana.</p>
+      <div id='map7'></div>
+      <br>
+      <p>And this is the congressional map. You can see the lines match the previous map pretty well.</p>
+      <div id='map8'></div>
+      <hr>
+      <h2> Citations </h2>
+      <p>
+          Commissioners. https://www.redistricting.wa.gov/commissioners. Accessed 12 Mar. 2024.
+        </p><p>
+            Eckman, Sarah J. “Redistricting Commissions for Congressional Districts.” Redistricting Commissions for Congressional Districts, [Library of Congress public edition]., Congressional Research Service, 2021, https://crsreports.congress.gov/product/details?prodcode=IN11053.
+        </p><p>
+            “FAQ.” Washington State Redistricting Commission, https://www.redistricting.wa.gov/faq. Accessed 10 Mar. 2024.        </p><p>
+            Jackson, Suzi. “MDAC – Developing Legislative Districts for Montana.” MDAC, https://mtredistricting.gov/. Accessed 3 June 2024.
+        </p><p>
+            Lasnik, Robert. Soto Palmer v. Hobbs. 3:22-cv-05035-RSL, 10 Aug. 2023, https://1.next.westlaw.com/Document/Icc5675b037e911eebdbff3176d2d1ebb/View/FullText.html?originationContext=kcCitingReferences&transitionType=Document&contextData=(sc.Search)&docSource=8c580ec30f904b2f84b603acfb255dc3&rank=2&rulebookMode=false&ppcid=554431acc0b54f41a881ea357a0d4fbd.        
+        </p><p>
+            Park, Alice, et al. An Extremely Detailed Map of the 2020 Election. The New York Times, 2021, https://www.nytimes.com/interactive/2021/upshot/2020-election-map.html.        
+        </p><p>
+            Redistricting Criteria. https://www.ncsl.org/redistricting-and-census/redistricting-criteria. Accessed 3 June 2024.
+        </p><p>
+            Thompson, Marilyn. “The Failed Promise of Independent Election Mapmaking.” ProPublica, 23 Jan. 2024, https://www.propublica.org/article/the-failed-promise-of-independent-election-mapmaking
+        </p>
+      <hr>
+      <h2>Data Sources</h2>
+      <p>Bureau, US Census. “Cartographic Boundary Files.” Census.Gov, 15 Apr. 2024, www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html. </p>
+      <p>Montana State Library, msl.mt.gov/. Accessed 7 June 2024. </p>
+      <p>Washington State Geospatial Open Data Portal, The State of Washington, geo.wa.gov/. Accessed 7 June 2024. </p>
+      <p>“Welcome.” Capitol Data Portal, The State of Texas, data.capitol.texas.gov/. Accessed 7 June 2024. </p>
+
+    <script>
+            /* Insert the JavaScript within the <script> tags, within the body */
+             mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpemFiZXRoY2Zpc2NoZXIiLCJhIjoiY2x1bjNrb2llMWo2eTJpbWpmazdiNnF5eiJ9.H10J5pTTFMnJs4uftavIbg'; //  Put your access token between the single quotes.
+            var map = new mapboxgl.Map({
+                container: 'map1', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx2avjva01d201rb5avn47sf', 
+                center: [-96.720426, 38.672645],
+                zoom: 4.1,
+            });
+            //code here disables scrolling, zooming, etc.
+            map.dragPan.disable();
+            map.scrollZoom.disable();
+            map.boxZoom.disable();
+            map.dragRotate.disable();
+            map.keyboard.disable();
+            map.doubleClickZoom.disable();
+            map.touchZoomRotate.disable();
+            map.touchZoomRotate.disableRotation();
+
+            // 2.5.3 Then initialize the 2nd map
+            var map2 = new mapboxgl.Map({
+                container: 'map2', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5gwp0i004601mwb05a5ds8', // stylesheet location
+                center: [-99.108175, 31.452096], // starting position 
+                zoom: 5.4 // starting zoom 
+                });
+
+            map2.dragPan.disable();
+            map2.scrollZoom.disable();
+            map2.boxZoom.disable();
+            map2.dragRotate.disable();
+            map2.keyboard.disable();
+            map2.doubleClickZoom.disable();
+            map2.touchZoomRotate.disable();
+            map2.touchZoomRotate.disableRotation();
+            
+            var map3 = new mapboxgl.Map({
+                container: 'map3', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5hy45q01sa01q1g6gqch1c', // stylesheet location
+                center: [-120.537526, 47.312759], // starting position 
+                zoom: 6.05 // starting zoom 
+                });
+            
+            map3.dragPan.disable();
+            map3.scrollZoom.disable();
+            map3.boxZoom.disable();
+            map3.dragRotate.disable();
+            map3.keyboard.disable();
+            map3.doubleClickZoom.disable();
+            map3.touchZoomRotate.disable();
+            map3.touchZoomRotate.disableRotation();
+        
+            var bounds = [
+		    [-121.681112, 45.588095], // Southwest coordinates
+		    [-118.609748, 47.157039] // Northeast coordinates 
+		    ];
+        
+            var map4 = new mapboxgl.Map({
+                container: 'map4', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx2avjva01d201rb5avn47sf', // stylesheet location
+                center: [-119.815254, 46.328913], // starting position [lng, lat] eg. [-122.6788, 45.5212]'
+                zoom: 7,
+			    minZoom: 7, // pick your own
+			    maxBounds: bounds // Sets bounds from variable above
+                });
+        
+            var bounds2 = [
+		    [-121.681112, 45.588095], // Southwest coordinates
+		    [-118.609748, 47.157039] // Northeast coordinates 
+		    ];
+        
+            var map5 = new mapboxgl.Map({
+                container: 'map5', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5hdw1s01u801pocc947q7k', // stylesheet location
+                center: [-119.815254, 46.328913], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 7,
+			    minZoom: 7, // pick your own
+			    maxBounds: bounds2 // Sets bounds from variable above
+                });
+        
+            var map6 = new mapboxgl.Map({
+                container: 'map6', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5hy45q01sa01q1g6gqch1c', // stylesheet location
+                center: [-119.815254, 46.328913], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 8.4 // starting zoom 
+                });
+        
+            map6.dragPan.disable();
+            map6.scrollZoom.disable();
+            map6.boxZoom.disable();
+            map6.dragRotate.disable();
+            map6.keyboard.disable();
+            map6.doubleClickZoom.disable();
+            map6.touchZoomRotate.disable();
+            map6.touchZoomRotate.disableRotation();
+        
+            var map7 = new mapboxgl.Map({
+                container: 'map7', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5hdw1s01u801pocc947q7k', // stylesheet location
+                center: [-110.703149, 47.055154], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 6 // starting zoom 
+                });
+            
+            map7.dragPan.disable();
+            map7.scrollZoom.disable();
+            map7.boxZoom.disable();
+            map7.dragRotate.disable();
+            map7.keyboard.disable();
+            map7.doubleClickZoom.disable();
+            map7.touchZoomRotate.disable();
+            map7.touchZoomRotate.disableRotation();
+        
+            var map8 = new mapboxgl.Map({
+                container: 'map8', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/elizabethcfischer/clx5gwp0i004601mwb05a5ds8', // stylesheet location
+                center: [-110.703149, 47.055154], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 6 // starting zoom 
+                });
+        
+            map8.dragPan.disable();
+            map8.scrollZoom.disable();
+            map8.boxZoom.disable();
+            map8.dragRotate.disable();
+            map8.keyboard.disable();
+            map8.doubleClickZoom.disable();
+            map8.touchZoomRotate.disable();
+            map8.touchZoomRotate.disableRotation();
+        
+            // 2.6 Change the map pointers
+            map.getCanvas().style.cursor = 'auto';
+            map2.getCanvas().style.cursor = 'auto';
+            map3.getCanvas().style.cursor = 'auto';
+            map6.getCanvas().style.cursor = 'auto';
+            map7.getCanvas().style.cursor = 'auto';
+            map8.getCanvas().style.cursor = 'auto';
+  </script>
+  </body>
+</html>
